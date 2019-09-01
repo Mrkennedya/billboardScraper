@@ -3,6 +3,7 @@
 # Welcome to the Billboard Hot 200 Web Scraper (Updated 08.27.19)
 # Created by Angel Kennedy // University of Florida College of Journalism and Communications
 # Created for the JOU4436 – Advanced Web Apps course by professor Mindy McAdams
+# Github repo available at: https://github.com/Mrkennedya/billboardScraper
 #
 ##############################################################################################
 
