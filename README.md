@@ -25,3 +25,14 @@ Both pieces of information were placed into variables and are included in the CS
 4. After acquiring the data from the individual pages, all variables were placed in a Python list. The python list was accessed using a writerow function to list an individual artist's data in its own row.
 5. For every 20 items acquired, I executed a time.sleep function that contained a random duration using the random.randint function. This approach would preventany indication of a scraping bot and prevent any additional restrictions on the scraper.
 
+## What problems did I find?
+
+Initially, I found that certain artists:
+1. Were listed as 'various_artists' or 'soundtrack,' which would take the user to a general page including ALL albums that had ever been listed under those artist names. This would be problematic for accessing data in individual pages.
+2. Did not have their own URLs, which would eliminate the ability to access their pages entirely.
+
+As a result, I needed to create a try/except that would list the URL variable as 'N/A.' I then created an if/then function to detect any album listings whose artist's variable was 'N/A' and listed the numOneHits and topTenHits variables as 'N/A.' 
+
+Within the individual pages and in the chart, I found that certain pieces of information were inaccessible despite it's availablility on the page. This was the result of the original developers stylesheet, which made acquiring data inaccessible through the program I created. As a result, I was unable to acquire the rank direction and date peaked.
+
+In addition, some individual pages did not contain the number of albums, number of top 10 hits or number 1 hits. As a result, I reformatted the program to only grab the 'top 10 hits' and 'No. 1 hits,' which were more often found in the artists' individual pages.
