@@ -81,7 +81,7 @@ for chartSection in billboardChart.find_all('div', {'class':'chart-list chart-de
 
 
         else:
-            # Nested function collects data to place in peakDate variable
+            # Nested function collects additional variables
             def get_page_data(artistUrl):
                 site = requests.get('https://www.billboard.com' + artistUrl + '/chart-history/billboard-200', headers = {'USER-AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Safari/605.1.15'})
                 s = site.content
